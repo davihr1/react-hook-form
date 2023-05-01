@@ -5,38 +5,40 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lName, .lAge {
+  color: #f5f5f5;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 20px;
+}
+#name, #Age{
+  width: 50vw;
+  height: 3rem;
+  padding-left: 3rem;
+
+  border: solid #9333EA;
+  border-radius: 6px;
+
+  color: antiquewhite;
+  font-weight: 600;
+  font-size: 1rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+#Age {
+  margin-bottom: 24px;
 }
 
-.card {
-  padding: 2em;
-}
+#name, #Age:focus {
+  border: solid #9333EA;
+  border-radius: 6px;
 
-.read-the-docs {
-  color: #888;
+  outline: none;
 }

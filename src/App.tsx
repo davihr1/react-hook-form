@@ -32,15 +32,15 @@ const isSubmitDisable = !name
 
   return (
     <>
-     <div>
-      <h1>React Form</h1>
+     <div className='Title'>
+      <h1>React Form Controlled</h1>
      </div>
      <form onSubmit={handleSubmit(handleTest)} action="">
-      <label htmlFor="name">Nome</label>
+      <label className='lName' htmlFor="name">Nome</label>
       <input id='name' placeholder='digite seu nome' {...register('name')} />
 
-      <label htmlFor="Age">Digite sua idade</label>
-      <input type="number" id="Age"  placeholder='whrite your age' step={1} min={1} max={16} {...register('Age',  {valueAsNumber: true})} />
+      <label className='lAge' htmlFor="Age">Digite sua idade</label>
+      <input type="number" id="Age"  placeholder='write your age' step={1} min={1} max={16} {...register('Age',  {valueAsNumber: true})} />
 
       {isSubmitDisable ?  <></> : <button type='submit' >Enviar</button>}
      </form>
